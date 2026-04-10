@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+html { 
+    background: url(./images/background.avif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-resolution: 500dpi;
+  }
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    overflow: hidden;
+    height: 670px;
+    width: 1080px;
+    border: 0.5px solid white;
+    backdrop-filter: blur(8px);
+    border-radius: 55px;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+}
+.title{
+    display: flex;
+
+}
+.vimg{
+    width: 50px;
+}
+.note{
+    font-size: 30px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.dabba{
+    width: 8rem;
+    height: 0.8rem;
+    background-color: aliceblue;
+    margin-top: -1.5rem;
+    border-radius: 15px;
+}
+.mainbody{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 33%;
+}
+.heading{
+    font-size: 2rem;
+}
+.heading span{
+    font-size: 5rem;
+    margin-top: -1rem;
+    background: -webkit-linear-gradient(#FFFDE4, #005AA7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right{
+    position: absolute;
+    right: 0rem;
+    scale: 1.2;
+
+}
+.btn-grp{
+    display: flex;
+    gap: 1.8rem;
+}
+.tryIt{
+    background: linear-gradient(to right,#FC466B,#3F5EFB);
+    padding: 0.5rem 4rem ;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+}   
+.tryIt:hover{
+    background: linear-gradient(to left,#FC466B,#3F5EFB);
+    scale: 1.1;
+}
+.Watch{
+    background-color: black;
+    padding: 0.5rem 3rem ;
+    border-radius: 35px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+}
+.Watch:hover{
+    background-color: white;
+    color: black;
+    scale: 1.1;
+}
+.Watch:hover .play{
+    color: black;
+}
+
+.footer{
+    display: flex;
+    padding-top: 4rem;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+    gap: 1rem;
+    font-size:x-large;
+}
+.lists a{
+    padding-bottom: 1rem;
+}
+.lists a:hover{
+    border-bottom: 5px solid white;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Note</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8cf91ff582.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/images.png">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container2">
+            <nav class="nav">   
+                <div class="title">
+                    <img src="./images/images.png" alt="" class="vimg">
+                    <p class="note">-Note</p>
+                </div>
+                
+                <ul class="flex gap-10 lists">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About V-note</a>
+                    </li>
+                    <li>
+                        <a href="./contactus/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mainbody">
+                <div class="left">
+                    <p>NOTEPAD ON YOUR FINGER TIPS</p>
+                    <div class="dabba"></div>
+                    <h1 class="heading"><span>V-NOTE </span>A VIRTUAL NOTEPAD</h1>
+                    <p>Explore the cutting edge technology based VIRTUAL NOTEPAD which saves you both time and efforts because your time is more precious to us and your loved ones</p>
+    
+                </div>
+                <div class="right">
+                    <img src="./images/mid-img.png" alt="">
+                </div>
+                <!-- <div class="right">
+                    
+                    
+                </div> -->
+                
+            </div>
+            <footer class="footer">
+                <div class="btn-grp">
+                    <script>
+                        function run(){
+                        console.log("clicked !");
+                        fetch("http://127.0.0.1:5000",{mode: 'no-cors',
+                        headers: {
+                          'Access-Control-Allow-Origin':'*'
+                        }}).then(data =>{ data.json()}).then(res=>{console.log(res)});
+                    }
+                </script>
+                    <button onclick="run()" class="tryIt">Try It</button>
+                    <button class="Watch">
+                        Watch Tutorial
+                        <i class="fa-regular fa-circle-play play"> </i>
+                    </button>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <py-script>
+        
+    </py-script>
+</body>
+</html>
